@@ -1,25 +1,25 @@
 <html>
     <head>
         <title>Blockly Test Page</title>
+        <script src="blockly/blockly_compressed.js"></script>
         <script src="loaders/loadblockly.js"></script>
         <script src="elements/consoleoutput.js"></script>
         <link href="index.css" rel="stylesheet">
         <xml id="toolbox" style="display: none">    
-          <block type="text"></block>
-          <block type="text_print"></block>
+          <block type="string"></block>
           <block type="sysout"></block>
+          <block type="runevent"></block>
         </xml>
     </head>
     <body>
+        <script>
+        </script>
         <div id="areaparent">
-            <h1>Blockly Test Page2</h1>
-            <consoleEl style="width: 35%; height: 90%; float: left;"></consoleEl>
-            <span id="blocklyArea" style="float: left; width: 65%; height: 90%;"></span>
+            <h1>Blockly Test Page2<button onclick="runCode();">Run Code</button></h1>
+            <consoleEl title="Console (Sysout)" style="width: 40%; height: 85%; float: left;"></consoleEl>
+            <span id="blocklyArea" style="float: right; width: 60%; height: 90%;"></span>
         </div>
         <div id="blocklyDiv" style="position: absolute;"></div>
-        <script>
-            
-        </script>
         
     </body>
 </html>

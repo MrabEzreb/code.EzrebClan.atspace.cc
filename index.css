@@ -7,7 +7,6 @@
 
 consoleEl {
     position: relative;
-    resize: both;
-    background-size: auto;
+    background-size: cover;
     background-color: black;
 }
